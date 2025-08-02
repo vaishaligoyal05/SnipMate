@@ -1,0 +1,104 @@
+/* Container */
+.snippet-form-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: #fefefe;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+  border: 1px solid #e2e8f0;
+}
+
+/* Heading */
+.snippet-form h2 {
+  color: #2d3748;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+/* Inputs, Select, Textarea */
+.snippet-form input,
+.snippet-form textarea,
+.snippet-form select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  color: #2d3748;
+  transition: all 0.3s ease;
+}
+
+.snippet-form input::placeholder,
+.snippet-form textarea::placeholder {
+  color: #a0aec0;
+}
+
+.snippet-form input:focus,
+.snippet-form textarea:focus,
+.snippet-form select:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Button */
+.snippet-form button {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  background: #667eea;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.snippet-form button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Code display style */
+.code-container {
+  background-color: #f7f9fc;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  color: #2d3748;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.code-container pre {
+  margin: 0;
+}
+
+/* Optional syntax colors */
+.code-container .keyword { color: #805ad5; }
+.code-container .string { color: #38b2ac; }
+.code-container .comment { color: #a0aec0; font-style: italic; }
+.code-container .function { color: #dd6b20; }
